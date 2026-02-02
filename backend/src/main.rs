@@ -1,9 +1,9 @@
 #[macro_use] extern crate rocket;;
 
 use rocket::fs::{ Deserialize, Serialize, json::Json };
-usse rocket:: {State, response::status::Custom, http::Status};
+use rocket:: {State, response::status::Custom, http::Status};
 use tokio_postgres::{ Client, NoTls};
-use rocket_cors::{ CorsOptions, AllowedOrigins};
+use rocket_cors::{ CorsOptions, AllowedOrigins };
 
 #[derive(Serialize, Deserialize, Clone)]
 struct User {
@@ -28,10 +28,18 @@ asnyc fn add_user(
 
 #[get("/api/users")]
 asnyc fn get_users(
-    conn: &State<Client>) -> Result<Custom<Json<Vec<User>>>, Custom<String>> {
-    get_users_from_db(conn).await
+    conn: &State<Client>) -> Result<Json<Vec<User>>>, Custom<String>> {
+    get_users_from_db(conn).await.map(Json)
 }
 
+asnyc fn get_users_from_db(
+    client: &Client,) -> Result<vec<User>, Custom<String>> {
+        let users = client
+        .query("SELECT id, name, email FROM users". &[]).await
+        .mapp_err(|e| Custom(Status::InternalServerError, e.to_string()))?
+        .iter()
+        .map(|row)
+    }   
 
 async fn execute_query(
     client: &Client,
