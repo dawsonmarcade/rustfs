@@ -1,0 +1,11 @@
+C:\Users\dawso\rustfs\backend\target\debug\deps\postgres_types-11693a210730e1f5.d: C:\Users\dawso\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\postgres-types-0.2.12\src\lib.rs C:\Users\dawso\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\postgres-types-0.2.12\src\pg_lsn.rs C:\Users\dawso\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\postgres-types-0.2.12\src\private.rs C:\Users\dawso\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\postgres-types-0.2.12\src\special.rs C:\Users\dawso\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\postgres-types-0.2.12\src\type_gen.rs
+
+C:\Users\dawso\rustfs\backend\target\debug\deps\libpostgres_types-11693a210730e1f5.rlib: C:\Users\dawso\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\postgres-types-0.2.12\src\lib.rs C:\Users\dawso\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\postgres-types-0.2.12\src\pg_lsn.rs C:\Users\dawso\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\postgres-types-0.2.12\src\private.rs C:\Users\dawso\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\postgres-types-0.2.12\src\special.rs C:\Users\dawso\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\postgres-types-0.2.12\src\type_gen.rs
+
+C:\Users\dawso\rustfs\backend\target\debug\deps\libpostgres_types-11693a210730e1f5.rmeta: C:\Users\dawso\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\postgres-types-0.2.12\src\lib.rs C:\Users\dawso\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\postgres-types-0.2.12\src\pg_lsn.rs C:\Users\dawso\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\postgres-types-0.2.12\src\private.rs C:\Users\dawso\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\postgres-types-0.2.12\src\special.rs C:\Users\dawso\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\postgres-types-0.2.12\src\type_gen.rs
+
+C:\Users\dawso\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\postgres-types-0.2.12\src\lib.rs:
+C:\Users\dawso\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\postgres-types-0.2.12\src\pg_lsn.rs:
+C:\Users\dawso\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\postgres-types-0.2.12\src\private.rs:
+C:\Users\dawso\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\postgres-types-0.2.12\src\special.rs:
+C:\Users\dawso\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\postgres-types-0.2.12\src\type_gen.rs:
