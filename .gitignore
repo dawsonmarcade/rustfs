@@ -1,0 +1,15 @@
+
+/target/
+**/*.rs.bk
+
+
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Env / secrets
+.env
+.env.*

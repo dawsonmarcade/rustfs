@@ -71,7 +71,7 @@ async fn update_user(
     conn: &State<Client>,
     id: i32,
     user: Json<User>
-) -> Result<Json<User, Id>, Custom<String>> {
+) -> Result<Json<User>, Custom<String>> {
     let row = conn
         .inner()
         .query_one(
