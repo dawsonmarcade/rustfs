@@ -66,10 +66,10 @@ async fn get_users_from_db(
 
 
 
-#[put("/api/users/<id>", data = "<user>" )]
+#[put("/api/users/id", data = "<user>" )]
 async fn update_user(
     conn: &State<Client>,
-    id: i32,
+    id: Option<i32>,
     user: Json<User>
 ) -> Result<Json<User>, Custom<String>> {
     let row = conn
@@ -98,15 +98,15 @@ async fn delete_user(conn: &State<Client>, id: i32) -> Result<Status, Custom<Str
     Ok(Status::NoContent)
 }
 
-async fn execute_query(
-    client: &Client,
-    query: &str,
-    params: &[&(dyn tokio_postgres::types::ToSql + Sync)],
-) -> Result<u64, Custom<String>> {
-    client 
-        .execute(query, params)
-        .await
-        .map_err(|e| Custom(Status::InternalServerError, e.to_string()))
+    async fn execute_query(
+        client: &Client,
+        query: &str,
+        params: &[&(dyn tokio_postgres::types::ToSql + Sync)],
+    ) -> Result<u64, Custom<String>> {
+        client 
+            .execute(query, params)
+            .await
+            .map_err(|e| Custom(Status::InternalServerError, e.to_string()))
 }
 
 
